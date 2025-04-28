@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5b4bc4;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.converter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.amount-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.amount-container input {
+    padding: 0.8rem;
+    border: 1px solid #ddd; /* Light gray */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.currency-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.from, .to {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+label {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#swap {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+    padding: 0.5rem;
+}
+
+.result {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#convert-btn {
+    padding: 1rem;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#convert-btn {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+#convert-btn:hover {
+    background-color: #5b4bc4;
+}
+
+.swap-icon {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .currency-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .from, .to {
+        width: 40%;
+    }
+}

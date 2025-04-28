@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter-box">
+            <div class="amount-container">
+                <label for="amount">Enter Amount</label>
+                <input type="number" id="amount" value="1000">
+            </div>
+            
+            <div class="currency-container">
+                <div class="from">
+                    <label>From</label>
+                    <select id="from-currency"></select>
+                </div>
+                
+                <div class="swap-icon">
+                    <button id="swap">⇄</button>
+                </div>
+
+                <div class="to">
+                    <label>To</label>
+                    <select id="to-currency"></select>
+                </div>
+            </div>
+
+            <div class="result" id="result">
+                1000 USD = 73,704.20 INR
+            </div>
+
+            <button id="convert-btn">Get Exchange Rate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
