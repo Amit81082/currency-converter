@@ -121,6 +121,8 @@ label {
     display: flex;
     justify-content: center;
     padding: 0.5rem 0;
+    position: relative;
+    top: 9px;
 }
 
 @media (min-width: 768px) {
@@ -128,8 +130,33 @@ label {
         flex-direction: row;
         align-items: center;
     }
+   
     
     .from, .to {
         width: 40%;
     }
 }
+
+    .swap-icon button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #6c5ce7;
+        transition: transform 0.3s;
+    }
+
+    .swap-icon button:hover {
+        transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+        .swap-icon button {
+            transform: rotate(90deg);
+        }
+        
+        .swap-icon button:hover {
+            transform: rotate(90deg) scale(1.2);
+        }
+    }
+
